@@ -78,7 +78,8 @@ public class ImageFragment extends Fragment {
                     public void onNext(List<String> imagePath) {
                         Log.d(TAG, "onNext() called with: " + "imagePath = [" + imagePath + "]");
                         mPath = imagePath;
-                        loadImage();
+                         
+                        loadImage(); // This line works 3 or more times.
                     }
                 });
     }
